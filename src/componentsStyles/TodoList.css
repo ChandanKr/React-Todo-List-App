@@ -1,0 +1,226 @@
+/* body {
+  font-family: "Poppins", sans-serif;
+  background-image: radial-gradient(
+      circle 5px at top left,
+      rgba(226, 226, 226, 0.1) 0%,
+      rgba(226, 226, 226, 0.1) 50%,
+      rgba(201, 201, 201, 0.1) 50%,
+      rgba(201, 201, 201, 0.1) 30%,
+      transparent 30%,
+      transparent 50%
+    ),
+    linear-gradient(90deg, rgb(51, 51, 51), rgb(51, 51, 51));
+  background-size: 11px 11px;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px rgb(121, 121, 121);
+}
+
+form {
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 40px;
+}
+
+form input {
+  flex-grow: 1;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid white;
+  background-color: rgba(0, 255, 255, 0.562);
+  color: white;
+  font-size: 1.2rem;
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+form button {
+  flex-basis: 15%;
+  font-size: 1.2rem;
+  border: 1px solid white;
+  background-image: linear-gradient(to left, #0091f2, #434fbe);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+form button:hover {
+  border: 1px solid white;
+  background-image: linear-gradient(to right, #5ede7b, #02a171);
+  color: white;
+}
+
+.listItems {
+  width: 100%;
+  max-width: 80%;
+  margin: 20px auto auto;
+  height: 40px;
+}
+
+.listItems ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listItems ul li {
+  padding: 10px 20px;
+  background-image: linear-gradient(to left, #f54b62, #bf0065);
+  color: #fff;
+  font-size: 1.1rem;
+  text-align: left;
+  margin-bottom: 15px;
+  position: relative;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.listItems ul li span {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.todo-completed {
+  text-decoration: line-through;
+  color: #fff !important;
+  background-image: linear-gradient(to left, #5ede7b, #02a171) !important;
+} */
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: radial-gradient(
+        circle 5px at top left,
+        rgba(226, 226, 226, 0.1) 0%,
+        rgba(226, 226, 226, 0.1) 50%,
+        rgba(201, 201, 201, 0.1) 50%,
+        rgba(201, 201, 201, 0.1) 30%,
+        transparent 30%,
+        transparent 50%
+      ),
+      linear-gradient(90deg, rgb(51, 51, 51), rgb(51, 51, 51));
+    background-size: 11px 11px;
+  }
+  
+  h1 {
+    color: #fff;
+    text-shadow: 2px 2px rgb(121, 121, 121);
+  }
+  
+  form {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 40px;
+  }
+  
+  form input {
+    flex-grow: 1;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid white;
+    background-color: rgba(0, 255, 255, 0.562);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0px 20px;
+    border-radius: 5px;
+  }
+  
+  form button {
+    flex-basis: 15%;
+    font-size: 1.2rem;
+    border: 1px solid white;
+    background-image: linear-gradient(to left, #0091f2, #434fbe);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  form button:hover{
+    background-image: linear-gradient(to right, #5ede7b, #02a171);
+  }
+  
+  .listItems {
+    width: 100%;
+    max-width: 80%;
+    margin: 20px auto auto;
+  }
+  
+  .listItems ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .listItems ul li {
+    padding: 10px 20px;
+    background-image: linear-gradient(to left, #f54b62, #bf0065);
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: left;
+    margin-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  .listItems ul li span {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 1;
+  }
+  
+  .todo-completed {
+    text-decoration: line-through;
+    color: #fff !important;
+    background-image: linear-gradient(to left, #5ede7b, #02a171) !important;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    form {
+      max-width: 90%;
+    }
+  
+    form input {
+      font-size: 1rem;
+      padding: 0px 10px;
+    }
+  
+    form button {
+      font-size: 1rem;
+      flex-basis: 25%;
+    }
+  
+    .listItems {
+      max-width: 90%;
+    }
+  
+    .listItems ul li {
+      font-size: 1rem;
+    }
+  
+    .listItems ul li span {
+      font-size: 1.5rem;
+    }
+  }
+  
